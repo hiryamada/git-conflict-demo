@@ -1,20 +1,33 @@
+# Git コンフリクト・マージ演習
 
 mainブランチの最初のコード
 
 ```python
-def greet(name):
-    print(f"{name}さん、こんにちは!")
+def greet(s):
+    print(f"{s}さん、こんにちは!")
     
 if __name__ == "__main__":
     greet("Taro")
 ```
 
-- englishブランチを作成
-- englishブランチに切り替え
-- greet関数の本体を英語化
+## やりたいこと
+
+- メッセージの英語化 (english ブランチで実施)
+- パラメータ名 s を name に改善 (param ブランチで実施)
+
+## 操作例
+
+- english ブランチを作成
+- english ブランチに切り替え
+- greet 関数の日本語のメッセージを英語化
 - コミット
-- mainブランチに切り替え
-- name を username に変更
+- main ブランチに切り替え
+- param ブランチを作成
+- param ブランチに切り替え
+- パラメータ名 s を name に変更
 - コミット
+- main ブランチに切り替え
 - main ブランチに english ブランチをマージ
+- main ブランチに param ブランチをマージ（ここでコンフリクトが発生）
+
 
