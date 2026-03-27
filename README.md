@@ -1,6 +1,7 @@
 # Git コンフリクト・マージ演習
 
 mainブランチの最初のコード
+!!!
 
 ```python
 def greet(s):
